@@ -1,5 +1,5 @@
 {% set name = "here-location-services" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/here-location-services-{{ version }}.tar.gz
-  sha256: 9aee8d0a05f5f05d850bf7aefb55e15676f0525038cdaf037af5ec2e63948405
+  sha256: 4bd57a8a1a4f733c8179d1905a3feab974bca021153b1dacfba876b30a41fabb
 
 build:
   number: 0
@@ -23,6 +23,8 @@ requirements:
     - geojson
     - python >=3.6
     - requests
+    - flexpolyline
+    - pandas
 
 test:
   imports:
