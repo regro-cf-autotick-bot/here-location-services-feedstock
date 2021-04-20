@@ -23,6 +23,8 @@ requirements:
     - geojson
     - python >=3.6
     - requests
+    - flexpolyline
+    - pandas
 
 test:
   imports:
