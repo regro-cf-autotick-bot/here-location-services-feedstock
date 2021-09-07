@@ -25,6 +25,8 @@ requirements:
     - requests
     - flexpolyline
     - pandas
+    - pyhocon
+    - requests-oauthlib
 
 test:
   imports:
