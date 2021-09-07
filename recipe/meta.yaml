@@ -1,5 +1,5 @@
 {% set name = "here-location-services" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/here-location-services-{{ version }}.tar.gz
-  sha256: 9be1ca7f4e7151774c889343f6cdbfb32301460fc992d141f33320e167a42e3b
+  sha256: 10523492f15e688e20b13763793171511c7fdfb9e44daef52774644cd6cbe7fb
 
 build:
   number: 0
@@ -25,6 +25,8 @@ requirements:
     - requests
     - flexpolyline
     - pandas
+    - pyhocon
+    - requests-oauthlib
 
 test:
   imports:
